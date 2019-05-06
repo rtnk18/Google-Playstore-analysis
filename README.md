@@ -1,5 +1,6 @@
-![Complete](https://img.shields.io/azure-devops/coverage/swellaby/opensource/25.svg)
-![Python](https://img.shields.io/pypi/pyversions/Django.svg)
+![Coverage](https://img.shields.io/badge/Coverage-100%25-success.svg)
+![Python](https://img.shields.io/badge/python-3.6-blue.svg)
+![Flask](https://img.shields.io/badge/Flask-1.0.1-orange.svg)
 # Google Playstore Analysis (Jan 19 - Feb 19)
 **A Developer dashboard showing analysis of app data**
 
