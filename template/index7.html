@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PLAY STORE APP ANALYSIS</title>
+
+  <!-- Custom fonts for this template-->
+  
+  
+
+  <!-- Custom styles for this template-->
+  <link href="static/Project.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+<!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+<a class="navbar-brand" href="#">PLAY STORE APP ANALYSIS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#d1">Developer</a>
+        </li>
+      
+      
+    </ul>
+    
+  </div>
+        </nav>
+
+    <!-- Outer Row -->
+  <div class="container">
+   <div class="row justify-content-center">
+    <div class="col-xl-12 col-lg-12 col-md-10">
+  
+
+              
+              
+                <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Top Ten Most Popular Apps</h6>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[0,'App']}}<br/><span class="float-right">Installs:{{table.loc[0,'Installs']}}</span> <d 
+                    class="small font-weight-bold">Rating:{{table.loc[0,'Rating']}} </d> </h4>
+                   
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: {{table.loc[0,'percentage']}}%" aria-valuenow="{{table.loc[0,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[1,'App']}}<br/><span class="float-right">Installs:{{table.loc[1,'Installs']}}</span>
+                    <d class="small font-weight-bold">Rating:{{table.loc[1,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: {{table.loc[1,'percentage']}}%" aria-valuenow="{{table.loc[1,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[2,'App']}}<br/><span class="float-right">Installs:{{table.loc[2,'Installs']}}</span>
+                   <d class="small font-weight-bold">Rating:{{table.loc[2,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" role="progressbar" style="width: {{table.loc[2,'percentage']}}%" aria-valuenow="{{table.loc[2,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[3,'App']}}<br/><span class="float-right">Installs:{{table.loc[3,'Installs']}}</span>
+                   <d class="small font-weight-bold">Rating:{{table.loc[3,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" role="progressbar" style="width: {{table.loc[3,'percentage']}}%" aria-valuenow="{{table.loc[3,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[4,'App']}}<br/><span class="float-right">Installs:{{table.loc[4,'Installs']}}</span>
+                     <d class="small font-weight-bold">Rating:{{table.loc[4,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: {{table.loc[4,'percentage']}}%" aria-valuenow="{{table.loc[4,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[5,'App']}}<br/><span class="float-right">Installs:{{table.loc[5,'Installs']}}</span>
+                     <d class="small font-weight-bold">Rating:{{table.loc[5,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: {{table.loc[5,'percentage']}}%" aria-valuenow="{{table.loc[5,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[6,'App']}}<br/> <span class="float-right">Installs:{{table.loc[6,'Installs']}}</span>
+                    <d class="small font-weight-bold">Rating:{{table.loc[6,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: {{table.loc[6,'percentage']}}%" aria-valuenow="{{table.loc[6,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[7,'App']}}<br/><span class="float-right">Installs:{{table.loc[7,'Installs']}}</span>
+                    <d class="small font-weight-bold">Rating:{{table.loc[7,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: {{table.loc[7,'percentage']}}%" aria-valuenow="{{table.loc[7,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[8,'App']}}<br/><span class="float-right">Installs:{{table.loc[8,'Installs']}}</span>
+                     <d class="small font-weight-bold">Rating:{{table.loc[8,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" role="progressbar" style="width: {{table.loc[8,'percentage']}}%" aria-valuenow="{{table.loc[8,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">AppName:{{table.loc[9,'App']}}<br/> <span class="float-right">Installs:{{table.loc[9,'Installs']}}</span>
+                     <d class="small font-weight-bold">Rating:{{table.loc[9,'Rating']}} </d> </h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: {{table.loc[9  ,'percentage']}}%" aria-valuenow="{{table.loc[9,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Top Ten Most Downloaded Apps</h6>
+      </div>
+      <div class="card-body">
+        <h4 class="small font-weight-bold">AppName:{{table1.loc[0,'App']}}<br/><span class="float-right">Installs:{{table1.loc[0,'Installs']}}</span> <d 
+        class="small font-weight-bold">Rating:{{table1.loc[0,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: {{table1.loc[0,'percentage']}}%" aria-valuenow="{{table1.loc[0,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[1,'App']}}<br/><span class="float-right">Installs:{{table1.loc[1,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[1,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: {{table1.loc[1,'percentage']}}%" aria-valuenow="{{table1.loc[1,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[2,'App']}}<br/><span class="float-right">Installs:{{table1.loc[2,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[2,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar" role="progressbar" style="width: {{table1.loc[2,'percentage']}}%" aria-valuenow="{{table1.loc[2,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[3,'App']}}<br/><span class="float-right">Installs:{{table1.loc[3,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[3,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar" role="progressbar" style="width: {{table1.loc[3,'percentage']}}%" aria-valuenow="{{table1.loc[3,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[4,'App']}}<br/><span class="float-right">Installs:{{table1.loc[4,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[4,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-info" role="progressbar" style="width: {{table1.loc[4,'percentage']}}%" aria-valuenow="{{table1.loc[4,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[5,'App']}}<br/><span class="float-right">Installs:{{table1.loc[5,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[5,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-info" role="progressbar" style="width: {{table1.loc[5,'percentage']}}%" aria-valuenow="{{table1.loc[5,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[6,'App']}}<br/> <span class="float-right">Installs:{{table1.loc[6,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[6,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: {{table1.loc[6,'percentage']}}%" aria-valuenow="{{table1.loc[6,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[7,'App']}}<br/><span class="float-right">Installs:{{table1.loc[7,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[7,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: {{table1.loc[7,'percentage']}}%" aria-valuenow="{{table1.loc[7,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[8,'App']}}<br/><span class="float-right">Installs:{{table1.loc[8,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[8,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar" role="progressbar" style="width: {{table1.loc[8,'percentage']}}%" aria-valuenow="{{table1.loc[8,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table1.loc[9,'App']}}<br/> <span class="float-right">Installs:{{table1.loc[9,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table1.loc[9,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-info" role="progressbar" style="width: {{table1.loc[9  ,'percentage']}}%" aria-valuenow="{{table1.loc[9,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          </div>
+          </div>
+          
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Top Ten Most Rated  Apps</h6>
+      </div>
+      <div class="card-body">
+        <h4 class="small font-weight-bold">AppName:{{table2.loc[0,'App']}}<br/><span class="float-right">Installs:{{table2.loc[0,'Installs']}}</span> <d 
+        class="small font-weight-bold">Rating:{{table2.loc[0,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: {{table2.loc[0,'percentage']}}%" aria-valuenow="{{table2.loc[0,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[1,'App']}}<br/><span class="float-right">Installs:{{table2.loc[1,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[1,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: {{table2.loc[1,'percentage']}}%" aria-valuenow="{{table2.loc[1,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[2,'App']}}<br/><span class="float-right">Installs:{{table2.loc[2,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[2,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar" role="progressbar" style="width: {{table2.loc[2,'percentage']}}%" aria-valuenow="{{table2.loc[2,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[3,'App']}}<br/><span class="float-right">Installs:{{table2.loc[3,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[3,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar" role="progressbar" style="width: {{table2.loc[3,'percentage']}}%" aria-valuenow="{{table2.loc[3,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[4,'App']}}<br/><span class="float-right">Installs:{{table2.loc[4,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[4,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-info" role="progressbar" style="width: {{table2.loc[4,'percentage']}}%" aria-valuenow="{{table2.loc[4,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[5,'App']}}<br/><span class="float-right">Installs:{{table2.loc[5,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[5,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-info" role="progressbar" style="width: {{table2.loc[5,'percentage']}}%" aria-valuenow="{{table2.loc[5,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[6,'App']}}<br/> <span class="float-right">Installs:{{table2.loc[6,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[6,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: {{table2.loc[6,'percentage']}}%" aria-valuenow="{{table2.loc[6,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[7,'App']}}<br/><span class="float-right">Installs:{{table2.loc[7,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[7,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: {{table2.loc[7,'percentage']}}%" aria-valuenow="{{table2.loc[7,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[8,'App']}}<br/><span class="float-right">Installs:{{table2.loc[8,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[8,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar" role="progressbar" style="width: {{table2.loc[8,'percentage']}}%" aria-valuenow="{{table2.loc[8,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          <h4 class="small font-weight-bold">AppName:{{table2.loc[9,'App']}}<br/> <span class="float-right">Installs:{{table2.loc[9,'Installs']}}</span>
+          <d class="small font-weight-bold">Rating:{{table2.loc[9,'Rating']}} </d> </h4>
+          <div class="progress mb-4">
+          <div class="progress-bar bg-info" role="progressbar" style="width: {{table2.loc[9  ,'percentage']}}%" aria-valuenow="{{table2.loc[9,'Rating']}}" aria-valuemin="0" aria-valuemax="5"></div>
+          </div>
+          </div>
+          </div>
+              
+                  <div id="d1"class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Developer</h1>
+                  </div>
+                  <form class="user" action="" method="post">
+                    <div class="form-group">
+                      
+
+                    </div>
+                   
+                    <div class="form-group">
+                      <input type="text" class="form-control form-control-user" name="username" placeholder="username" value="{{request.form.username}}">
+                    </div>
+                   
+                    <div class="form-group">
+                      <input type="password" class="form-control form-control-user" name="password" placeholder="Password" value="{{request.form.password}}">
+                    </div>
+                     
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                      </div>
+                    </div>
+                    <input class="btn btn-primary btn-user btn-block"type="submit" value="Login">
+                     
+                    <hr>
+                    
+                  </form>
+
+                  {% if error %}
+        <p class="small"><strong>Error:</strong> {{ error }}
+      {% endif %}
+                  <hr>
+                  <div class="text-center">
+                    <a class="small" href="/forgot">Forgot Password?</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+ <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Project by Shivam Abhisek Rajat Saif Karan  </span>
+          </div>
+        </div>
+      </footer>
+  <!-- Bootstrap core JavaScript-->
+  
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+ 
+
+  <!-- Custom scripts for all pages-->
+  
+</body>
+
+</html>
